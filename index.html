@@ -8,12 +8,13 @@
     <meta name="description" content="News Sumarizer">
     <meta name="keywords" content="news, sumarizer, ai, sport">
     <meta name="author" content="Cobzarencu Robert, Codorean Andrei, Căzăceanu Octavian">
-    <link rel="stylesheet" href="D:\News Sumarizer POO\index.css">
+    <link rel="stylesheet" href="D:\News Sumarizer\index.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <nav>
             <nav>
@@ -25,14 +26,13 @@
                     <label class="logo">News</label>
                     <div id="navbar">
                         <ul>
-                            <li><a href="file:///D:\News Sumarizer POO\index.html">Home</a></li>
-                            <li><a href="#">Sports</a></li>
-                            <li><a href="#">Economics</a></li>
-                            <li><a href="#">Politics</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="file:///D:\News Sumarizer\index.html">Home</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Sports.html">Sports</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Economics.html">Economics</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Politics.html">Politics</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Team.html">Team</a></li>
                             <li class="search-bar">
                                 <input type="search" placeholder="Search..." size="30" id="search" data-search>
-                                </button>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,8 @@
                         <p class="titlu_articol">
                             ACEDWWANDAKWUDAWUBDAWYJDGHJAWVDGHAWVDGAWVDGAWFDAWHFDHAWDVAWGHDYAWJGDAWKJHDEIASHFDESKFHJJESIFSEJ
                         </p>
-                        <p class="continut_articol"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                        <p class="continut_articol"> à, èLorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean
                             commodo ligula eget dolor.
                             Aenean
                             massa. Cum sociis
@@ -77,18 +78,18 @@
                     </div>
                 </a>
             </article>
-                New Item 2,3,4,5.....,10
-            -->
+-->
 
         <div class="article_zone" data-article-container>
             <template data-article-template>
-                <div class="article">
-                    <a href="" data-url>
-                        <div class="title_article" data-title>
-                        </div>
-                        <div class="content_article" data-content>
-                        </div>
-                    </a>
+                <div class="article" id="expandedd">
+                    <!--<a href="" data-url> -->
+                    <button class="close_button">X</button>
+                    <div class="title_article" data-title>
+                    </div>
+                    <div class="content_article" data-content>
+                    </div>
+                    <!--</a>-->
                 </div>
             </template>
         </div>
@@ -98,17 +99,6 @@
     <footer>
         <p>&copy; 2023 News Website. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.querySelector('#check').addEventListener('change', function () {
-            var nav = document.querySelector('nav ul');
-            if (this.checked) {
-                nav.style.left = '0';
-            } else {
-                nav.style.left = '-100%';
-            }
-        });
-    </script>
 
 </body>
 

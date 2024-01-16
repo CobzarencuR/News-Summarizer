@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>News Website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Sumarizer">
+    <meta name="keywords" content="news, sumarizer, ai, sport">
+    <meta name="author" content="Cobzarencu Robert, Codorean Andrei, Căzăceanu Octavian">
+    <link rel="stylesheet" href="D:\News Sumarizer\index.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <nav>
+            <nav>
+                <div class="nav-container">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <label class="logo">News</label>
+                    <div id="navbar">
+                        <ul>
+                            <li><a href="file:///D:\News Sumarizer\index.html">Home</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Sports.html">Sports</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Economics.html">Economics</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Politics.html">Politics</a></li>
+                            <li><a href="file:///D:\News Sumarizer\Team.html">Team</a></li>
+                            <li class="search-bar">
+                                <input type="search" placeholder="Search..." size="30" id="search" data-search>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>
+                Știri de actualitate
+            </h1>
+        </div>
+        <!--
+        <div class="article_zone">
+            <article>
+                <a href="file:///D:\News Sumarizer POO\index.html">
+
+                    <div>
+                        <p class="titlu_articol">
+                            ACEDWWANDAKWUDAWUBDAWYJDGHJAWVDGHAWVDGAWVDGAWFDAWHFDHAWDVAWGHDYAWJGDAWKJHDEIASHFDESKFHJJESIFSEJ
+                        </p>
+                        <p class="continut_articol"> à, èLorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean
+                            commodo ligula eget dolor.
+                            Aenean
+                            massa. Cum sociis
+                            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            ultricies nec, pellentesque
+                            eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                            aliquet
+                            nec, vulputate eget,
+                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+                            pede
+                            mollis pretium.
+                            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                            tellus.
+                            Aenean leo ligula,
+                            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+                            quis,
+                            feugiat a, tellus.
+                        </p>
+                    </div>
+                </a>
+            </article>
+-->
+
+        <div class="article_zone" data-article-container>
+            <template data-article-template>
+                <div class="article" id="expandedd">
+                    <!--<a href="" data-url> -->
+                    <button class="close_button">X</button>
+                    <div class="title_article" data-title>
+                    </div>
+                    <div class="content_article" data-content>
+                    </div>
+                    <!--</a>-->
+                </div>
+            </template>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 News Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+<!-- END: be15d9bcejpp -->

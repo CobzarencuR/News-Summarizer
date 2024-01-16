@@ -219,14 +219,48 @@ article div {
 }
 
 .article {
+    position: relative;
     background-color: #f8f8f8;
     border: 1px solid rgb(111, 79, 226);
-    aspect-ratio: 2 / 1;
+    /*aspect-ratio: 2 / 1;*/
     border-radius: 15px;
-    flex: 1 1 45%;
+    /*flex: 1 1 50%;*/
     margin: 2.5%;
-    max-width: 40vw;
-    max-height: 35vh;
+    width: 40vw;
+    height: 50vh;
+    cursor: pointer;
+}
+
+.article.expanded {
+    position: fixed;
+    top: 7%;
+    left: 15%;
+    width: 80vw;
+    height: 95vh;
+    transform: translate(-10%, -10%);
+    z-index: 1000;
+    transition: 1s;
+    border: 5px solid rgb(111, 79, 226);
+    pointer-events: none;
+}
+
+.close_button {
+    display: none;
+    position: absolute;
+    top: -1.75vh;
+    right: -0.75vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    pointer-events: auto;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(111, 79, 226);
+    text-align: center;
+    color: white;
 }
 
 .title_article {
@@ -256,6 +290,28 @@ article div {
     display: none;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+}
+
+.article.expanded .content_article {
+    overflow-y: auto;
+    /* Allow scroll within expanded box */
+}
+
+body.no-scroll {
+    overflow: hidden;
+    /* Prevent scrolling on the main site */
+}
+
 @media (max-width: 1400px) {
 
     label.logo {
@@ -271,6 +327,10 @@ article div {
 
     .content_article {
         -webkit-line-clamp: 7;
+    }
+
+    .article.expanded {
+        top: 8%;
     }
 }
 
@@ -322,6 +382,10 @@ article div {
     .content_article {
         -webkit-line-clamp: 6;
     }
+
+    .article.expanded {
+        top: 9%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -334,5 +398,9 @@ article div {
 @media (max-width: 600px) {
     .content_article {
         -webkit-line-clamp: 2;
+    }
+
+    .article.expanded {
+        top: 10%;
     }
 }

@@ -1,2 +1,2 @@
-# News-Sumarizer
-Web Interface for POO Project
+# News-Summarizer
+Web Interface for a news summarizer
